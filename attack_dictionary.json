@@ -1,0 +1,91 @@
+{
+    "Reconnaissance": {
+        "Active Scanning": {
+            "Scanning IP Block": {
+                "id": "T1596.001",
+                "keywords": [
+                    "Nmap"
+                ],
+                "severity": "Medium",
+                "description": "Adversaries are actively probing for vulnerabilities, which could lead to subsequent attacks."
+            },
+            "Vulnerability Scanning": {
+                "id": "T1596.002",
+                "keywords": [
+                    "Nessus",
+                    "Nikto",
+                    "OpenVAS",
+                    "Nmap"
+                ],
+                "severity": "High",
+                "description": "Adversaries intent to identify and exploit vulnerabilities within the network"
+            },
+            "Wordlist Scanning": {
+                "id": "T1596.003",
+                "keywords": [
+                    "gobuster",
+                    "dirbuster"
+                ],
+                "severity": "Medium",
+                "description": "Adversaries are attempting to identify weak points in web applications"
+            }
+        }
+    },
+    "Initial Access": {
+        "Exploit Public-Facing Application": {
+            "": {
+                "id": "T1190",
+                "keywords": [
+                    "#",
+                    "&",
+                    "--",
+                    "=",
+                    "OR",
+                    "or",
+                    "1=1",
+                    "AND"
+                ],
+                "severity": "High",
+                "description": "Adversaries use direct attack vector that could result in unauthorized access to systems or sensitive data"
+            }
+        }
+    },
+    "Lateral Movement": {
+        "Remote Services": {
+            "SSH": {
+                "id": "T1021.004",
+                "keywords": [
+                    "ssh"
+                ],
+                "severity": "High",
+                "description": "Adversaries have already gained initial access and are attempting to move laterally within the network."
+            }
+        }
+    },
+    "Privilege Escalation": {
+        "Abuse Elevation Control Mechanism": {
+            "Sudo and Sudo Caching": {
+                "id": "T1548.003",
+                "keywords": [
+                    "sudoers",
+                    "sudo"
+                ],
+                "severity": "High",
+                "description": "Adversaries are attempting to escalate privileges to gain higher levels of access."
+            }
+        }
+    },
+    "Credential Access": {
+        "Brute Force": {
+            "Password Spraying": {
+                "id": "T1110.003",
+                "keywords": [
+                    "hydra",
+                    "john"
+                ],
+                "severity": "High",
+                "description": "Adversaries attempt to gain access to accounts using commonly used passwords"
+            }
+        }
+    }
+}
